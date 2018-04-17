@@ -141,7 +141,7 @@ footer{
   background: #333333;
   padding: 48px 0 0;
 
-  p{
+  p, a{
     color: white;
   }
 }
@@ -190,7 +190,8 @@ footer{
     color: white;
     font-size: 18px;
     margin-bottom: 10px;
-    display: block;
+    display: flex;
+    align-items: center;
   }
   i{
     margin-right: 16px;

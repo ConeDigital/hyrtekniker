@@ -27,7 +27,6 @@ jQuery(document).ready( function($) {
 
     //Change form content
     $('.cd-step-1').on('click', function(e) {
-        e.preventDefault();
         $('.cd-form-step ').removeClass('cd-active-step');
         $('.cd-step-1').addClass('cd-active-step');
         $('.cd-form-step-two, .cd-form-step-three').fadeOut('fast');
@@ -36,7 +35,6 @@ jQuery(document).ready( function($) {
         }, 300);
     });
     $('.cd-step-2').on('click', function(e) {
-        e.preventDefault();
         $('.cd-form-step ').removeClass('cd-active-step');
         $('.cd-step-2').addClass('cd-active-step');
         $('.cd-form-step-one, .cd-form-step-three').fadeOut('fast');
@@ -45,7 +43,6 @@ jQuery(document).ready( function($) {
         }, 300);
     });
     $('.cd-step-3').on('click', function(e) {
-        e.preventDefault();
         $('.cd-form-step ').removeClass('cd-active-step');
         $('.cd-step-3').addClass('cd-active-step');
         $('.cd-form-step-one, .cd-form-step-two').fadeOut('fast');
@@ -66,21 +63,17 @@ jQuery(document).ready( function($) {
     });
 
 
-    ////Scroll on menu click
-    //$('.cd-scroll-link a').on('click', function(e){
-    //    //Get section name from href
-    //    var url = $(this).attr('href');
-    //    var hash = url.substring(url.indexOf('#'));
-    //    //Scroll to section
-    //    $('html, body').animate({
-    //        scrollTop: $(hash).offset().top
-    //    }, 800);
-    //    $("html, body").css({
-    //        height: 'auto',
-    //        overflow: 'visible'
-    //    });
-    //    $(".cd-mobile-menu").fadeOut('fast');
-    //});
+    //Scroll on menu click
+    $('.cd-scroll-link a').on('click', function(e){
+        //Get section name from href
+        var url = $(this).attr('href');
+        var hash = url.substring(url.indexOf('#'));
+        //Scroll to section
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        }, 800);
+
+    });
 
 
     //Slide Effect when scrolling down

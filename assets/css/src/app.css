@@ -723,7 +723,7 @@ header {
 footer {
   background: #333333;
   padding: 48px 0 0; }
-  footer p {
+  footer p, footer a {
     color: white; }
 
 .cd-footer-top {
@@ -782,7 +782,14 @@ footer {
     color: white;
     font-size: 18px;
     margin-bottom: 10px;
-    display: block; }
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
   .cd-footer-left-info i {
     margin-right: 16px; }
 
@@ -1081,7 +1088,7 @@ footer {
   margin-bottom: 5px; }
 
 .cd-form-content {
-  padding: 66px 15px 100px;
+  padding: 66px 25px 100px;
   min-height: 435px; }
   .cd-form-content h3 {
     margin: 0; }
