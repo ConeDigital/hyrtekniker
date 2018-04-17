@@ -9,6 +9,8 @@
 <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <title><?php wp_title( ' - ', true, 'right' ); ?></title>
 
     <?php cone_og_meta_tags(); ?>
@@ -16,25 +18,19 @@
     <?php wp_head(); ?>
 </head>
 <body>
-
+    <div class="cd-load-overlay"></div>
     <header>
-        <div class="cd-header-logo cd-background-img" style="background-image: url('<?php the_field('header-image', 'option') ; ?>')">
-            <a target="_blank" href="https://www.youtube.com/user/RMHSWEDEN" class="cd-absolute-link"></a>
-<!--            <div class="cd-max-width">-->
-<!--                <a href="--><?php //echo esc_url(home_url()); ?><!--">-->
-<!--                    <h1>--><?php //the_field('site-title', 'option') ; ?><!--</h1>-->
-<!--                </a>-->
-<!--            </div>-->
-        </div>
-        <div class="cd-header cd-max-width cd-large-width">
-            <div class="cd-header-content">
-<!--                <a class="cd-header-side-links" target="_blank" href="https://www.instagram.com/trans_94/?hl=sv">-->
-<!--                    <img src="--><?php //echo esc_url(home_url( '/wp-content/themes/meshtalks/assets/images/trans94.png' ) ); ?><!--">-->
-<!--                </a>-->
-                <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => '' ) ); ?>
-<!--                <a class="cd-header-side-links" target="_blank" href="https://www.youtube.com/user/RMHSWEDEN">-->
-<!--                    <span>*MESH TV</span>-->
-<!--                </a>-->
-            </div>
+        <div class="cd-max-width cd-header">
+            <a href="<?php echo esc_url(home_url()); ?>">
+                <img src="<?php the_field('site-logo', 'option') ; ?>">
+            </a>
+            <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => '' ) ); ?>
+            <i class="material-icons cd-open-menu">menu</i>
         </div>
     </header>
+    <div class="cd-mobile-menu">
+        <img src="<?php the_field('site-logo', 'option') ; ?>">
+        <i class="material-icons cd-close-menu">close</i>
+        <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => '' ) ); ?>
+    </div>
+

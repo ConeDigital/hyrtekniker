@@ -5,47 +5,34 @@
  * @package cone
  */
 ?>
-    <div class="cd-subscribe-section cd-max-width cd-big-width">
-        <div class="cd-subscribe-content">
-            <div class="cd-subscribe-top">
-                <h3><?php the_field('newsletter-headline', 'option') ; ?></h3>
-                <p><?php the_field('newsletter-text', 'option') ; ?></p>
-            </div>
-            <?php echo do_shortcode(get_field('mailchimp-shortcode', 'option')) ; ?>
 
-        </div>
-        <div class="cd-subscribe-content" style="background-image: url('<?php the_field('insta-image', 'option') ; ?>')">
-            <div class="cd-background-overlay"></div>
-            <div class="cd-subscribe-top">
-                <h3><?php the_field('instragram-headline', 'option') ; ?></h3>
-            </div>
-            <a href="<?php the_field('link-to-insta', 'option') ; ?>" target="_blank">Follow us on instagram</a>
-        </div>
-    </div>
     <footer>
-        <div class="cd-footer cd-max-width">
-            <div class="cd-footer-item">
-                <h6><?php the_field('footer-quote') ; ?></h6>
-<!--                <div class="cd-footer-social">-->
-<!--                    --><?php //if( have_rows('social-icons', 'option') ): ?>
-<!--                        --><?php //while( have_rows('social-icons', 'option') ) : the_row();?>
-<!--                            <a target="_blank" style="background-color: --><?php //the_sub_field('social-background', 'option') ; ?><!--" href="--><?php //the_sub_field('social-link', 'option') ; ?><!--">-->
-<!--                                <i class="--><?php //the_sub_field('social-icon', 'option') ; ?><!--"></i>-->
-<!--                            </a>-->
-<!--                        --><?php //endwhile; ?>
-<!--                    --><?php //endif; ?>
-<!--                </div>-->
+        <div class="cd-footer-top cd-max-width">
+            <div class="cd-footer-top-left">
+                <p><?php the_field('footer-text', 'option') ; ?></p>
+               <div class="cd-footer-left-info">
+                   <a href="<?php the_field('footer-link', 'option') ; ?>" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i>ftdrift.se </a>
+                   <p><i class="fa fa-phone-square" aria-hidden="true"></i><?php the_field('footer-phone', 'option') ; ?></p>
+               </div>
             </div>
-            <div class="cd-footer-item">
-                <p><?php the_field('license-text', 'option') ; ?></p>
+            <div class="cd-footer-top-right">
+                <?php if( have_rows('footer-images' ,'option') ): ?>
+                    <?php while( have_rows('footer-images' ,'option') ) : the_row();?>
+                        <img src="<?php the_sub_field('footer-img' ,'option') ; ?>">
+                    <?php endwhile; ?>
+                <?php endif; ?>
+            </div>
+        </div>
+        <div class="cd-footer-bottom">
+            <div class="cd-max-width cd-footer-bottom-content">
+                <p>Org nr: <?php the_field('footer-org', 'option') ; ?></p>
+                <div class="cd-footer-bottom-right">
+                    <p>Cookies</p>
+                    <p>© Hyrtekniker 2018</p>
+                </div>
             </div>
         </div>
     </footer>
-
-
     <?php wp_footer(); ?>
-
-<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-
 </body>
 </html>
