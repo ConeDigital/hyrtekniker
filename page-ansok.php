@@ -39,7 +39,7 @@
                             <?php endwhile; ?>
                         <?php endif; ?>
                         <div class="cd-service-buttons">
-                            <a class="cd-button cd-step-2" href="#">Starta Ansökningen</a>
+                            <a class="cd-button cd-step-2" href="#">Ansök enkelt utan CV, svar på 5 snabba frågor</a>
                         </div>
                     </div>
                     <div class="cd-form-content-apply">

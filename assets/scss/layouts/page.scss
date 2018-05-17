@@ -1,11 +1,213 @@
 //HOME -----------------------------------------
 
+.cd-home-section{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: white;
+  z-index: 1;
+  display: flex;
+
+  @include breakpoint(medium) {
+    flex-direction: column;
+    height: auto;
+    position: relative;
+  }
+}
+
+.cd-home-left{
+  width: 100%;
+  padding: 28px 60px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+
+  @include breakpoint(xl) {
+    padding: 28px 30px;
+  }
+
+  @include breakpoint(medium) {
+    align-items: flex-start;
+    position: relative;
+    flex-direction: column;
+  }
+  @include breakpoint(small) {
+    padding: 60px 15px 15px;
+  }
+
+  h1{
+    color: #000000;
+    font-size: 40px;
+    line-height: 40px;
+    margin: 0 0 24px;
+    text-transform: uppercase;
+    font-family: $bold-font;
+
+    @include breakpoint(small) {
+      font-size: 30px;
+    }
+  }
+  p{
+    color: #1F1F1F;
+    font-size: 24px;
+    letter-spacing: -0.84px;
+    line-height: 38px;
+    margin: 0;
+    font-weight: 100;
+
+    @include breakpoint(small) {
+     font-size: 18px;
+      line-height: 30px;
+    }
+  }
+
+  &:hover{
+    .cd-home-link-content{
+
+      h4{
+        margin-left: 30px;
+      }
+      p{
+        margin-left: 30px;
+
+      }
+      i{
+        margin-left: 30px;
+      }
+    }
+  }
+}
+
+.cd-home-left-content{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px;
+  box-sizing: border-box;
+
+  @include breakpoint(xl) {
+    padding: 30px;
+  }
+
+  @include breakpoint(medium) {
+    padding: 60px 0;
+    position: relative;
+  }
+  @include breakpoint(small) {
+    padding: 0 0 60px;
+  }
+}
+
+.cd-home-right{
+  width: 100%;
+}
+
+.cd-home-right-content{
+  padding: 28px 50px;
+  box-sizing: border-box;
+  height: 50%;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+
+  @include breakpoint(xl) {
+    padding: 28px 30px;
+  }
+  @include breakpoint(medium) {
+    padding: 60px 30px 28px;
+    min-height: max-content;
+    height: 47vw;
+  }
+  @include breakpoint(small) {
+    padding: 60px 15px 15px;
+    height: 50vw;
+  }
+
+  &:hover{
+    .cd-home-link-content{
+
+      h4{
+        margin-left: 30px;
+      }
+      p{
+        margin-left: 30px;
+
+      }
+      i{
+        margin-left: 30px;
+      }
+    }
+    .cd-background-overlay{
+      background-color: rgba(0,0,0,0.4);
+    }
+  }
+
+  .cd-home-link-content{
+    p, i{
+      color: white;
+    }
+  }
+
+  .cd-background-overlay{
+    background-color: rgba(0,0,0,0.2);
+  }
+}
+
+.cd-home-link-content{
+  position: relative;
+
+  h4{
+    color: $blue;
+    font-size: 24px;
+    line-height: 29px;
+    margin: 10px 0 8px;
+    transition: 0.3s ease-in-out;
+    transition-delay: 0.05s;
+    text-transform: uppercase;
+
+    @include breakpoint(small) {
+      font-size: 18px;
+    }
+  }
+  p{
+    color: #1F1F1F;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+    margin: 0;
+    transition: 0.3s ease-in-out;
+
+    @include breakpoint(small) {
+     font-size: 11px;
+    }
+  }
+  i{
+    transition: 0.3s ease-in-out;
+    transition-delay: 0.1s;
+  }
+}
+
 //GLOBAL ------------------------
 
 .cd-page-section{
+  padding: 44px 0;
+
+  h2{
+
+    @include breakpoint(small) {
+      font-size: 32px;
+      line-height: 42px;
+    }
+  }
 
   h3{
-    margin: 29px 0 18px;
+    margin: 0 0 18px;
   }
   h5{
     margin: 0;
@@ -24,7 +226,7 @@
 
 .cd-right-text{
   width: 100%;
-  max-width: 505px;
+  max-width: 635px;
 
   @include breakpoint(medium) {
     margin: 0 auto;
@@ -45,11 +247,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 72px 0 120px;
-  border-bottom: 1px solid #e6e6e6;
+
+  ul{
+    font-size: 18px;
+    line-height: 36px;
+    padding-left: 20px;
+  }
 
   @include breakpoint(medium) {
-    padding: 60px 0 90px;
   }
 }
 
@@ -66,15 +271,28 @@
   display: flex;
   align-items: center;
 
+  @include breakpoint(small) {
+    padding: 60px 0;
+
+  }
+
   h1{
     color: #FFFFFF;
     font-size: 48px;
-    line-height: 61px;
-    margin: 0 0 24px;
+    line-height: 58px;
+    margin: 0 0 36px;
+    font-family: $normal-font;
+    font-weight: 300;
+
 
     @include breakpoint(tablet) {
       font-size: 36px;
       line-height: 46px;
+    }
+
+    @include breakpoint(small) {
+      font-size: 30px;
+      line-height: 40px;
     }
   }
 
@@ -89,9 +307,116 @@
 .cd-hero-content{
   position: relative;
   z-index: 1;
-  max-width: 800px;
+  max-width: 625px;
+  padding-top: 40px;
+
+  @include breakpoint(small) {
+    padding-top: 0;
+  }
 }
 
+.cd-hero-button{
+  color: $blue;
+  font-size: 18px;
+  line-height: 22px;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+  padding: 20px 40px;
+  display: inline-block;
+  transition: 0.2s ease-in-out;
+
+  @include breakpoint(small) {
+    padding: 12px 20px;
+    font-size: 16px;
+  }
+
+  &:hover{
+    background: $blue;
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.cd-hero-link{
+  color: #FFFFFF;
+  font-size: 18px;
+  line-height: 22px;
+  margin-top: 25px;
+  text-decoration: underline;
+  display: block;
+}
+
+
+//EXPERT ------------------------------
+
+.cd-expert-wrapper{
+  display: flex;
+}
+
+.cd-expert-left{
+  max-width: 505px;
+  width: 100%;
+}
+
+.cd-expert-right{
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.cd-expert-sidebar{
+  position: sticky;
+  top: 50px;
+  margin-left: 80px;
+
+  @include breakpoint(xl) {
+    margin-left: 30px;
+  }
+  @include breakpoint(laptop) {
+    display: none;
+  }
+}
+
+.cd-expert-sidebar-content{
+  display: flex;
+  flex-direction: column;
+  padding-left: 14px;
+  border-left: 2px solid $blue;
+
+  a{
+    color: $blue;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 15px;
+    transition: 0.2s ease-in-out;
+
+    &:hover{
+      color: #000;
+    }
+
+    &:last-child{
+      margin: 0;
+    }
+  }
+}
+
+.cd-expert-sidebar-link{
+  padding: 10px 20px;
+  color: #FFFFFF;
+  font-size: 18px;
+  line-height: 22px;
+  border-radius: 5px;
+  background: $blue;
+  display: inline-block;
+  margin-top: 28px;
+  transition: 0.2s ease-in-out;
+  text-align: center;
+
+  &:hover{
+    background: darken($blue, 20%);
+  }
+}
 
 
 //CONCEPT ------------------------------
@@ -104,11 +429,13 @@
 
 .cd-service-content{
   max-width: 505px;
-  margin: 0 auto;
-  padding: 78px 0 90px;
 
-  @include breakpoint(medium) {
-    padding: 60px 0 90px;
+  h3{
+    width: max-content;
+
+    @include breakpoint(medium) {
+      max-width: 100%;
+    }
   }
 }
 
@@ -157,17 +484,15 @@
 .cd-about-section{
 
   .cd-page-content{
-    padding: 127px 0 232px;
     border: none;
-    border-top: 1px solid #e6e6e6;
-
-    @include breakpoint(medium) {
-      padding: 60px 0 90px;
-    }
   }
 
   .cd-left-img{
     max-width: 480px;
+  }
+
+  .cd-right-text{
+    max-width: 505px;
   }
 }
 
@@ -269,6 +594,10 @@
 .cd-form-content{
   padding: 66px 30px 100px;
   min-height: 435px;
+
+  .cd-service-content{
+    margin: 0 auto;
+  }
 
   h3{
     margin: 0;
@@ -436,3 +765,252 @@
   background: #4A90E2;
 }
 
+
+//Company section -----------------------------------------------
+
+.cd-company-content{
+  margin: 0 auto;
+  padding: 30px 0 120px;
+}
+
+
+//Contact form section -------------------------------------------
+
+.cd-contact-form-section{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  min-height: 49vw;
+  max-height: 660px;
+  height: 100vh;
+}
+
+.cd-contact-form{
+  background-color: rgba(31,31,31,0.7);
+  max-width: 579px;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  padding: 70px 44px;
+  box-sizing: border-box;
+  height: 100%;
+  position: relative;
+
+  @include breakpoint(small) {
+    padding: 60px 20px;
+  }
+
+  .wpcf7{
+    width: 100%;
+
+    p{
+      margin: 0;
+    }
+
+    label{
+      color: #FFFFFF;
+      font-size: 18px;
+      letter-spacing: -0.63px;
+      line-height: 29px;
+    }
+
+    input{
+      height: 48px;
+      box-sizing: border-box;
+      background-color: #E6E6E6;
+      width: 100%;
+      border: none;
+      margin-top: 8px;
+      color: #4a4a4a;
+      padding: 0 15px;
+    }
+
+    .wpcf7-submit{
+      border-radius: 5px;
+      background-color: #FFFFFF;
+      box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+      color: $blue;
+      font-size: 18px;
+      line-height: 22px;
+      padding: 20px 40px;
+      height: auto;
+      margin-top: 14px;
+      display: inline-block;
+      width: auto;
+      transition: 0.2s ease-in-out;
+
+      @include breakpoint(small) {
+        padding: 12px 20px;
+        font-size: 16px;
+      }
+
+      &:hover{
+        background: $blue;
+        text-decoration: none;
+        color: white;
+      }
+    }
+  }
+  .ajax-loader{
+    display: none !important;
+  }
+
+  .wpcf7-response-output{
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    margin: auto;
+    right: 0;
+    width: max-content;
+    color: white;
+    max-width: 100%;
+    font-size: 14px;
+
+    @include breakpoint(small) {
+      font-size: 11px;
+    }
+  }
+}
+
+.cd-contact-form-input{
+  margin-bottom: 16px;
+  position: relative;
+
+  .wpcf7-not-valid-tip{
+    position: absolute;
+    width: max-content;
+    font-size: 12px;
+    bottom: -30px;
+    line-height: 1;
+  }
+}
+
+
+//COMPETENCE SECTION ---------------------------------------
+
+.cd-competence-section{
+  background-color: #FAFAFA;
+  padding: 83px 0;
+
+  h3{
+    margin: 0 auto 42px;
+    text-align: center;
+    max-width: 651px;
+  }
+}
+
+.cd-competence-table{
+  box-sizing: border-box;
+  border: 1px solid #E0E1E2;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+  max-width: 781px;
+  margin: 0 auto;
+}
+
+.cd-competence-table-head{
+  display: flex;
+  justify-content: space-between;
+  background-color: #F4F5F6;
+  border-bottom: 1px solid #E0E1E2;
+  position: relative;
+
+  a{
+    width: 100%;
+    text-align: center;
+    padding: 14px 0;
+    color: #1F1F1F;
+    font-size: 18px;
+    letter-spacing: -0.63px;
+    font-family: $normal-font;
+    position: relative;
+
+    @include breakpoint(small) {
+      padding: 10px 0;
+      font-size: 12px;
+    }
+  }
+
+  .cd-active-competence-link{
+    color: $blue;
+  }
+}
+
+.cd-competence-table-wrapper{
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  justify-content: center;
+  box-sizing: border-box;
+  min-height: 280px;
+
+  @include breakpoint(small) {
+    align-items: flex-start;
+    padding: 25px 15px;
+  }
+}
+
+.cd-competence-table-content{
+  display: flex;
+  align-items: flex-start;
+  max-width: 660px;
+  justify-content: space-between;
+
+  img{
+    max-width: 88px;
+    margin-right: 40px;
+    margin-top: 15px;
+
+    @include breakpoint(tablet) {
+      display: none;
+    }
+  }
+}
+
+.cd-competence-table-right{
+
+  h4{
+    color: #000000;
+    font-family: $normal-font;
+    font-size: 29px;
+    letter-spacing: -1.01px;
+    line-height: 37px;
+    margin: 0 0 16px;
+    font-weight: 300;
+
+    @include breakpoint(tablet) {
+      font-size: 20px;
+      line-height: 30px;
+      margin: 0 0 10px;
+    }
+  }
+
+  p{
+    color: #1F1F1F;
+    font-size: 18px;
+    letter-spacing: -0.63px;
+    line-height: 25px;
+    margin: 0;
+
+    @include breakpoint(tablet) {
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+}
+
+.cd-active-competence-backr{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 33.3%;
+  border-bottom: 1px solid white;
+  background: white;
+  transition: 0.2s ease-in-out;
+}
+
+
+.cd-qual-content, .cd-expert-content{
+  display: none;
+}

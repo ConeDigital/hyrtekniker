@@ -19,10 +19,11 @@
 </head>
 <body>
     <div class="cd-load-overlay"></div>
-    <header>
+    <header class="<?php if(is_page('ansok')) : ?>cd-dark-header <?php elseif(is_front_page()) : ?>cd-home-header<?php endif ; ?>">
         <div class="cd-max-width cd-header">
             <a href="<?php echo esc_url(home_url()); ?>">
-                <img src="<?php the_field('site-logo', 'option') ; ?>">
+                <img class="cd-primary-logo" src="<?php the_field('site-logo', 'option') ; ?>">
+                <img class="cd-secondary-logo" src="<?php the_field('secondary-logo', 'option') ; ?>">
             </a>
             <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => '' ) ); ?>
             <i class="material-icons cd-open-menu">menu</i>
