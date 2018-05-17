@@ -476,6 +476,9 @@ h3 {
   font-size: 32px;
   line-height: 38px;
   letter-spacing: -1.12px; }
+  @media (max-width: 600px) {
+    h3 {
+      font-size: 26px; } }
 
 h5 {
   color: #1F1F1F;
@@ -1220,6 +1223,9 @@ footer {
   width: 100%;
   padding-top: 100px;
   padding-bottom: 50px; }
+  @media (max-width: 900px) {
+    .cd-expert-right {
+      display: none; } }
 
 .cd-expert-sidebar {
   position: -webkit-sticky;
@@ -1229,9 +1235,6 @@ footer {
   @media (max-width: 1100px) {
     .cd-expert-sidebar {
       margin-left: 30px; } }
-  @media (max-width: 900px) {
-    .cd-expert-sidebar {
-      display: none; } }
 
 .cd-expert-sidebar-content {
   display: -webkit-box;
@@ -1281,7 +1284,8 @@ footer {
     width: max-content; }
     @media (max-width: 800px) {
       .cd-service-content h3 {
-        max-width: 100%; } }
+        max-width: 100%;
+        width: auto; } }
 
 .cd-service-items p {
   margin: 30px 0 27px; }
@@ -1712,6 +1716,9 @@ footer {
     margin: 0 auto 42px;
     text-align: center;
     max-width: 651px; }
+    @media (max-width: 600px) {
+      .cd-competence-section h3 {
+        text-align: left; } }
 
 .cd-competence-table {
   -webkit-box-sizing: border-box;

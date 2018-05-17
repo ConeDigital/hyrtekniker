@@ -35,6 +35,10 @@ h3{
   font-size: 32px;
   line-height: 38px;
   letter-spacing: -1.12px;
+
+  @include breakpoint(small) {
+    font-size: 26px;
+  }
 }
 
 h5{
