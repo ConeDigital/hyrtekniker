@@ -7,6 +7,8 @@
   background: white;
   z-index: 1;
   display: flex;
+  background: $primary-color;
+
 
   @include breakpoint(medium) {
     flex-direction: column;
@@ -89,7 +91,6 @@
   justify-content: center;
   padding: 60px;
   box-sizing: border-box;
-  background: $primary-color;
 
   @include breakpoint(xl) {
     padding: 30px;
@@ -1040,7 +1041,6 @@
 }
 
 .codemaster {
-
   padding: 18px 32px;
   background: #fff;
   border-radius: 5px;
@@ -1048,11 +1048,12 @@
   width: 35%;
   text-align: center;
   box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2);
-
   font-size: 12px;
   text-transform: uppercase;
   color: black!important;
 
-
-
+  @include breakpoint(mobile) {
+    width: 100%;
+    box-sizing: border-box;
+  }
 }

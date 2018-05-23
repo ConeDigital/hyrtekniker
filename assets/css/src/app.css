@@ -894,7 +894,8 @@ footer {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  background: #EA5C45; }
   @media (max-width: 800px) {
     .cd-home-section {
       -webkit-box-orient: vertical;
@@ -985,8 +986,7 @@ footer {
           justify-content: center;
   padding: 60px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  background: #EA5C45; }
+          box-sizing: border-box; }
   @media (max-width: 1100px) {
     .cd-home-left-content {
       padding: 30px; } }
@@ -1870,3 +1870,8 @@ footer {
   font-size: 12px;
   text-transform: uppercase;
   color: black !important; }
+  @media (max-width: 500px) {
+    .codemaster {
+      width: 100%;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box; } }
