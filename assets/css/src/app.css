@@ -523,8 +523,8 @@ img {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: -webkit-radial-gradient(circle, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.74) 100%);
-  background: radial-gradient(circle, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.74) 100%);
+  background: -webkit-radial-gradient(circle, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.55) 100%);
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.55) 100%);
   left: 0;
   top: 0;
   -webkit-transition: 0.2s ease-in-out;
@@ -534,10 +534,10 @@ img {
   color: #1F1F1F;
   font-size: 18px;
   line-height: 22px;
-  border: 1px solid #FECB45;
+  border: 1px solid #EA5C45;
   -webkit-border-radius: 2px;
           border-radius: 2px;
-  background-color: #FECB45;
+  background-color: #EA5C45;
   text-align: center;
   padding: 11px 23px;
   display: block;
@@ -648,7 +648,7 @@ header {
     .cd-dark-header .cd-header li:last-child a:hover {
       background: white;
       text-decoration: none;
-      color: #5494C0; }
+      background: rgba(0, 0, 0, 0.3); }
 
 .cd-home-header .cd-secondary-logo {
   display: block; }
@@ -706,15 +706,15 @@ header {
           font-size: 15px;
           margin-left: 30px; } }
   .cd-header li:last-child a {
-    background-color: #FFFFFF;
     -webkit-border-radius: 2px;
             border-radius: 2px;
-    color: #5494C0;
+    border: 1px solid white;
+    color: #fff;
     font-size: 16px;
     line-height: 19px;
-    padding: 8px 16px; }
+    padding: 16px 20px; }
     .cd-header li:last-child a:hover {
-      background: #5494C0;
+      background: rgba(0, 0, 0, 0.3);
       text-decoration: none;
       color: white; }
 
@@ -938,20 +938,19 @@ footer {
     .cd-home-left {
       padding: 60px 15px 15px; } }
   .cd-home-left h1 {
-    color: #000000;
+    color: #fff;
     font-size: 40px;
     line-height: 40px;
-    margin: 0 0 24px;
-    text-transform: uppercase;
+    margin: 0 0 16px;
     font-family: "Avenir LT Std 85 Heavy", sans-serif; }
     @media (max-width: 600px) {
       .cd-home-left h1 {
         font-size: 30px; } }
   .cd-home-left p {
-    color: #1F1F1F;
-    font-size: 24px;
+    color: #fff;
+    font-size: 18px;
     letter-spacing: -0.84px;
-    line-height: 38px;
+    line-height: 29px;
     margin: 0;
     font-weight: 100; }
     @media (max-width: 600px) {
@@ -959,11 +958,11 @@ footer {
         font-size: 18px;
         line-height: 30px; } }
   .cd-home-left:hover .cd-home-link-content h4 {
-    margin-left: 30px; }
+    margin-left: 15px; }
   .cd-home-left:hover .cd-home-link-content p {
-    margin-left: 30px; }
+    margin-left: 15px; }
   .cd-home-left:hover .cd-home-link-content i {
-    margin-left: 30px; }
+    margin-left: 15px; }
 
 .cd-home-left-content {
   position: absolute;
@@ -986,7 +985,8 @@ footer {
           justify-content: center;
   padding: 60px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+          box-sizing: border-box;
+  background: #EA5C45; }
   @media (max-width: 1100px) {
     .cd-home-left-content {
       padding: 30px; } }
@@ -1045,15 +1045,14 @@ footer {
 .cd-home-link-content {
   position: relative; }
   .cd-home-link-content h4 {
-    color: #5494C0;
+    color: white;
     font-size: 24px;
     line-height: 29px;
     margin: 10px 0 8px;
     -webkit-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
     -webkit-transition-delay: 0.05s;
-            transition-delay: 0.05s;
-    text-transform: uppercase; }
+            transition-delay: 0.05s; }
     @media (max-width: 600px) {
       .cd-home-link-content h4 {
         font-size: 18px; } }
@@ -1151,11 +1150,11 @@ footer {
       padding: 60px 0; } }
   .cd-hero h1 {
     color: #FFFFFF;
-    font-size: 48px;
+    font-size: 40px;
     line-height: 58px;
     margin: 0 0 36px;
     font-family: "Avenir LT Std 55 Roman", sans-serif;
-    font-weight: 300; }
+    font-weight: 600; }
     @media (max-width: 700px) {
       .cd-hero h1 {
         font-size: 36px;
@@ -1173,8 +1172,10 @@ footer {
 .cd-hero-content {
   position: relative;
   z-index: 1;
-  max-width: 625px;
-  padding-top: 40px; }
+  max-width: 800px;
+  padding-top: 40px;
+  margin: 0 auto;
+  text-align: center; }
   @media (max-width: 600px) {
     .cd-hero-content {
       padding-top: 0; } }
@@ -1247,9 +1248,17 @@ footer {
       -ms-flex-direction: column;
           flex-direction: column;
   padding-left: 14px;
-  border-left: 2px solid #5494C0; }
+  border-left: 2px solid #225477; }
+  .cd-expert-sidebar-content p {
+    font-size: 14px;
+    line-height: 22px;
+    margin: 0 0 15px;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.6px; }
   .cd-expert-sidebar-content a {
-    color: #5494C0;
+    color: #225477;
     font-size: 18px;
     line-height: 22px;
     margin-bottom: 15px;
@@ -1263,11 +1272,12 @@ footer {
 .cd-expert-sidebar-link {
   padding: 10px 20px;
   color: #FFFFFF;
-  font-size: 18px;
+  font-size: 12px;
+  text-transform: uppercase;
   line-height: 22px;
   -webkit-border-radius: 5px;
           border-radius: 5px;
-  background: #5494C0;
+  background: #225477;
   display: inline-block;
   margin-top: 28px;
   -webkit-transition: 0.2s ease-in-out;
@@ -1303,7 +1313,7 @@ footer {
   .cd-service-item i {
     min-width: 24px;
     height: 24px;
-    background-color: #FECB45;
+    background-color: #EA5C45;
     -webkit-border-radius: 100%;
             border-radius: 100%;
     font-size: 16px;
@@ -1512,16 +1522,16 @@ footer {
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out; }
   .cd-form-step-three input:focus {
-    border-bottom: 1px solid #FECB45; }
+    border-bottom: 1px solid #EA5C45; }
 
 .cd-form-step-three input[type=submit] {
   color: #1F1F1F;
   font-size: 18px;
   line-height: 22px;
-  border: 1px solid #FECB45;
+  border: 1px solid #EA5C45;
   -webkit-border-radius: 2px;
           border-radius: 2px;
-  background-color: #FECB45;
+  background-color: #EA5C45;
   text-align: center;
   padding: 11px 23px;
   display: block;
@@ -1843,3 +1853,20 @@ footer {
 
 .cd-qual-content, .cd-expert-content {
   display: none; }
+
+.is-black {
+  color: black !important; }
+
+.codemaster {
+  padding: 18px 32px;
+  background: #fff;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  margin-top: 24px;
+  width: 35%;
+  text-align: center;
+  -webkit-box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+  font-size: 12px;
+  text-transform: uppercase;
+  color: black !important; }

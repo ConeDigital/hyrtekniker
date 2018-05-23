@@ -65,7 +65,7 @@ header{
           &:hover{
             background: white;
             text-decoration: none;
-            color: $blue;
+            background: rgba(0, 0, 0, 0.30);
           }
         }
       }
@@ -131,15 +131,16 @@ header{
   li{
     &:last-child{
       a{
-        background-color: #FFFFFF;
+        //background-color: #FFFFFF;
         border-radius: 2px;
-        color: #5494C0;
+        border: 1px solid white;
+        color: #fff;
         font-size: 16px;
         line-height: 19px;
-        padding: 8px 16px;
+        padding: 16px 20px;
 
         &:hover{
-          background: $blue;
+          background: rgba(0, 0, 0, 0.30);
           text-decoration: none;
           color: white;
         }

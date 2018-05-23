@@ -4,7 +4,7 @@
         <div class="cd-max-width">
             <div class="cd-hero-content">
                 <?php the_content() ; ?>
-                <a class="cd-hero-button" href="<?php echo esc_url(home_url('/ansok')); ?>">Ansök enkelt utan CV. Svara på 5 frågor</a>
+                <a class="codemaster" href="<?php echo esc_url(home_url('/ansok')); ?>">Ansök enkelt utan CV. Svara på 5 frågor</a>
                 <a href="#om-oss" class="cd-hero-link">Eller läs mer om vårt koncept</a>
             </div>
         </div>
@@ -76,7 +76,7 @@
     <div class="cd-expert-right">
         <div class="cd-expert-sidebar">
             <div class="cd-expert-sidebar-content">
-                <a href="#innehall">Innehåll</a>
+                <p>Innehåll</p>
                 <a href="#vem-vi-soker">Vem vi söker</a>
                 <a href="#varfor-arbeta-som-konsult">Varför arbeta som konsult</a>
                 <a href="#om-oss">Om oss</a>

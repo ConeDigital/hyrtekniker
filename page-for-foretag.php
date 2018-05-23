@@ -4,7 +4,7 @@
         <div class="cd-max-width">
             <div class="cd-hero-content">
                 <h1><?php the_title() ; ?></h1>
-                <a class="cd-hero-button" href="#kontakta-oss">Kontakta oss</a>
+                <a class="codemaster" href="#kontakta-oss">Kontakta oss</a>
             </div>
         </div>
         <div class="cd-background-overlay"></div>

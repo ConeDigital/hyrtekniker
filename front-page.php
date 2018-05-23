@@ -2,16 +2,18 @@
 
    <div class="cd-home-section">
        <div class="cd-home-left">
-           <a href="<?php echo esc_url(home_url('/for-tekniker')); ?>" class="cd-absolute-link"></a>
+<!--           <a href="--><?php //echo esc_url(home_url('/for-tekniker')); ?><!--" class="cd-absolute-link"></a>-->
            <div class="cd-home-left-content">
                <h1><?php the_title() ; ?></h1>
                <p><?php the_content() ; ?></p>
+               <a href ="#0" class="codemaster">Läs mer om vårt koncept</a>
            </div>
-           <div class="cd-home-link-content">
-               <p>För Tekniker</p>
-               <h4>Ett Koncept från FT Drift</h4>
-               <i class="material-icons">arrow_forward</i>
-           </div>
+
+<!--           <div class="cd-home-link-content">-->
+<!--               <p>För Tekniker</p>-->
+<!--               <h4 class="is-black">Ett Koncept från FT Drift</h4>-->
+<!--               <i class="material-icons">arrow_forward</i>-->
+<!--           </div>-->
        </div>
        <div class="cd-home-right">
            <div class="cd-home-right-content cd-background-img" style="background-image: url('<?php the_field('home-top-img') ; ?>')">
@@ -20,7 +22,7 @@
                 <div class="cd-home-link-content">
                     <p>Ansök nu</p>
                     <h4>Vi söker personal</h4>
-                    <i class="material-icons">arrow_forward</i>
+<!--                    <i class="material-icons">arrow_forward</i>-->
                 </div>
            </div>
            <div class="cd-home-right-content cd-background-img" style="background-image: url('<?php the_field('home-lower-img') ; ?>')">
@@ -28,8 +30,8 @@
                <div class="cd-background-overlay"></div>
                <div class="cd-home-link-content">
                    <p>För Företag</p>
-                   <h4>kvalificerade Tekniker</h4>
-                   <i class="material-icons">arrow_forward</i>
+                   <h4>Kvalificerade Tekniker</h4>
+<!--                   <i class="material-icons">arrow_forward</i>-->
                </div>
            </div>
        </div>
