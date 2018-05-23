@@ -19,7 +19,7 @@
 </head>
 <body>
     <div class="cd-load-overlay"></div>
-    <header class="<?php if(is_page('ansok')) : ?>cd-dark-header <?php elseif(is_front_page()) : ?>cd-home-header<?php endif ; ?>">
+    <header class="<?php if(is_page('ansok')) : ?>cd-dark-header<?php endif ; ?>">
         <div class="cd-max-width cd-header">
             <a href="<?php echo esc_url(home_url()); ?>">
                 <img class="cd-primary-logo" src="<?php the_field('site-logo', 'option') ; ?>">
