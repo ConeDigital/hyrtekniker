@@ -11,7 +11,7 @@
             <div class="cd-competence-table-wrapper">
                 <div class="cd-junior-content">
                     <div class="cd-competence-table-content ">
-                        <img src="<?php the_field('competence-junior-img', 'option') ; ?>" />
+<!--                        <img src="--><?php //the_field('competence-junior-img', 'option') ; ?><!--" />-->
                         <div class="cd-competence-table-right">
                             <?php the_field('competence-junior-text', 'option') ; ?>
                         </div>
@@ -19,7 +19,7 @@
                 </div>
                 <div class="cd-qual-content">
                     <div class="cd-competence-table-content">
-                        <img src="<?php the_field('competence-qual-img', 'option') ; ?>" />
+<!--                        <img src="--><?php //the_field('competence-qual-img', 'option') ; ?><!--" />-->
                         <div class="cd-competence-table-right">
                             <?php the_field('competence-qual-text', 'option') ; ?>
                         </div>
@@ -27,7 +27,7 @@
                 </div>
                <div class="cd-expert-content">
                    <div class="cd-competence-table-content">
-                       <img src="<?php the_field('competence-expert-img', 'option') ; ?>" />
+<!--                       <img src="--><?php //the_field('competence-expert-img', 'option') ; ?><!--" />-->
                        <div class="cd-competence-table-right">
                            <?php the_field('competence-expert-text', 'option') ; ?>
                        </div>

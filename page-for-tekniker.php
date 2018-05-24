@@ -5,7 +5,7 @@
             <div class="cd-hero-content">
                 <?php the_content() ; ?>
                 <a class="codemaster" href="<?php echo esc_url(home_url('/ansok')); ?>">Ansök enkelt utan CV. Svara på 5 frågor</a>
-                <a href="#om-oss" class="cd-hero-link">Eller läs mer om vårt koncept</a>
+                <a href="#innehall" class="cd-hero-link">Eller läs mer om vårt koncept</a>
             </div>
         </div>
         <div class="cd-background-overlay"></div>

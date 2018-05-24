@@ -531,7 +531,7 @@ img {
   transition: 0.2s ease-in-out; }
 
 .cd-button {
-  color: #1F1F1F;
+  color: #fff;
   font-size: 18px;
   line-height: 22px;
   border: 1px solid #EA5C45;
@@ -544,8 +544,8 @@ img {
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out; }
   .cd-button:hover {
-    -webkit-box-shadow: 0 6px 20px rgba(254, 203, 69, 0.5);
-            box-shadow: 0 6px 20px rgba(254, 203, 69, 0.5); }
+    -webkit-box-shadow: 0 6px 20px rgba(234, 92, 69, 0.5);
+            box-shadow: 0 6px 20px rgba(234, 92, 69, 0.5); }
 
 .sharer {
   color: #1F1F1F;
@@ -638,17 +638,17 @@ header {
   .cd-dark-header .cd-header ul a {
     color: #000000; }
   .cd-dark-header .cd-header li:last-child a {
-    background-color: #5494C0;
+    background-color: #EA5C45;
     -webkit-border-radius: 2px;
             border-radius: 2px;
     color: white;
     font-size: 16px;
     line-height: 19px;
-    padding: 8px 16px; }
+    padding: 16px 20px; }
     .cd-dark-header .cd-header li:last-child a:hover {
       background: white;
       text-decoration: none;
-      background: rgba(0, 0, 0, 0.3); }
+      background: #e2361a; }
 
 .cd-home-header .cd-secondary-logo {
   display: block; }
@@ -1181,7 +1181,7 @@ footer {
       padding-top: 0; } }
 
 .cd-hero-button {
-  color: #5494C0;
+  color: #EA5C45;
   font-size: 18px;
   line-height: 22px;
   -webkit-border-radius: 5px;
@@ -1198,7 +1198,7 @@ footer {
       padding: 12px 20px;
       font-size: 16px; } }
   .cd-hero-button:hover {
-    background: #5494C0;
+    background: #EA5C45;
     text-decoration: none;
     color: white; }
 
@@ -1284,7 +1284,7 @@ footer {
   transition: 0.2s ease-in-out;
   text-align: center; }
   .cd-expert-sidebar-link:hover {
-    background: #2f5e7f; }
+    background: #b52b14; }
 
 .cd-service-content {
   max-width: 505px; }
@@ -1356,7 +1356,7 @@ footer {
   max-width: 600px;
   text-align: center; }
   .cd-application-top-text a {
-    color: #5494C0; }
+    color: #EA5C45; }
 
 .cd-form {
   border: 1px solid #ECECEC;
@@ -1525,7 +1525,7 @@ footer {
     border-bottom: 1px solid #EA5C45; }
 
 .cd-form-step-three input[type=submit] {
-  color: #1F1F1F;
+  color: #fff;
   font-size: 18px;
   line-height: 22px;
   border: 1px solid #EA5C45;
@@ -1539,8 +1539,8 @@ footer {
   transition: 0.2s ease-in-out;
   margin-top: 45px; }
   .cd-form-step-three input[type=submit]:hover {
-    -webkit-box-shadow: 0 6px 20px rgba(254, 203, 69, 0.5);
-            box-shadow: 0 6px 20px rgba(254, 203, 69, 0.5); }
+    -webkit-box-shadow: 0 6px 20px rgba(234, 92, 69, 0.5);
+            box-shadow: 0 6px 20px rgba(234, 92, 69, 0.5); }
 
 .cd-form-content-apply {
   max-width: 505px;
@@ -1671,7 +1671,7 @@ footer {
       background-color: #FFFFFF;
       -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
               box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-      color: #5494C0;
+      color: #EA5C45;
       font-size: 18px;
       line-height: 22px;
       padding: 20px 40px;
@@ -1686,7 +1686,7 @@ footer {
           padding: 12px 20px;
           font-size: 16px; } }
       .cd-contact-form .wpcf7 .wpcf7-submit:hover {
-        background: #5494C0;
+        background: #EA5C45;
         text-decoration: none;
         color: white; }
   .cd-contact-form .ajax-loader {
@@ -1766,7 +1766,7 @@ footer {
         padding: 10px 0;
         font-size: 12px; } }
   .cd-competence-table-head .cd-active-competence-link {
-    color: #5494C0; }
+    color: #EA5C45; }
 
 .cd-competence-table-wrapper {
   display: -webkit-box;

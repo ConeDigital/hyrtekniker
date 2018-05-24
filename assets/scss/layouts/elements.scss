@@ -98,7 +98,7 @@ img{
 }
 
 .cd-button{
-  color: #1F1F1F;
+  color: #fff;
   font-size: 18px;
   line-height: 22px;
   border: 1px solid $primary-color;
@@ -110,7 +110,7 @@ img{
   transition: 0.2s ease-in-out;
 
   &:hover{
-    box-shadow: 0 6px 20px rgba(254, 203, 69,.5);
+    box-shadow: 0 6px 20px rgba(234, 92, 69, 0.5);
   }
 }
 
