@@ -1856,6 +1856,8 @@ footer {
 
 .cd-padding-top {
   padding-top: 20px; }
+  .cd-padding-top h3 {
+    margin-top: 40px; }
   @media (max-width: 500px) {
     .cd-padding-top {
       padding: 0; } }
