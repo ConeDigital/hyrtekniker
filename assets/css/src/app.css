@@ -1854,6 +1854,12 @@ footer {
 .cd-qual-content, .cd-expert-content {
   display: none; }
 
+.cd-padding-top {
+  padding-top: 20px; }
+  @media (max-width: 500px) {
+    .cd-padding-top {
+      padding: 0; } }
+
 .is-black {
   color: black !important; }
 
