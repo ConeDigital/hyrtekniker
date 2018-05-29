@@ -6,7 +6,7 @@
            <div class="cd-home-left-content">
                <h1><?php the_title() ; ?></h1>
                <p><?php the_content() ; ?></p>
-               <a href ="<?php echo esc_url(home_url('/for-tekniker')); ?>" class="codemaster">Läs mer om vårt koncept</a>
+<!--               <a href ="--><?php //echo esc_url(home_url('/for-tekniker')); ?><!--" class="codemaster">Läs mer om vårt koncept</a>-->
            </div>
 
 <!--           <div class="cd-home-link-content">-->

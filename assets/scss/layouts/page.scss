@@ -1055,5 +1055,7 @@
   @include breakpoint(mobile) {
     width: 100%;
     box-sizing: border-box;
+    display: block;
+    padding: 18px 0;
   }
 }
