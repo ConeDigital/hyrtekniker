@@ -470,6 +470,10 @@ h2 {
   font-size: 48px;
   line-height: 58px;
   margin-bottom: 16px; }
+  @media (max-width: 500px) {
+    h2 {
+      font-size: 32px;
+      line-height: 48px; } }
 
 h3 {
   color: #1F1F1F;
@@ -607,7 +611,7 @@ img {
 
 header {
   height: 100px;
-  z-index: 2;
+  z-index: 5;
   position: absolute;
   width: 100%;
   top: 0;
@@ -1862,6 +1866,24 @@ footer {
     .cd-padding-top {
       padding: 0; } }
 
+.cd-tekniker-filter-section {
+  background-color: #F6F6F6;
+  padding: 48px 0; }
+
+.cd-tekniker-filter {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
 .is-black {
   color: black !important; }
 
@@ -1885,3 +1907,201 @@ footer {
               box-sizing: border-box;
       display: block;
       padding: 18px 0; } }
+
+.cd-tekniker-hero {
+  height: 45vw;
+  min-height: -webkit-max-content;
+  min-height: -moz-max-content;
+  min-height: max-content;
+  max-height: 450px;
+  padding: 90px 0 !important; }
+  .cd-tekniker-hero .cd-background-overlay {
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.4); }
+  .cd-tekniker-hero .cd-hero-content {
+    z-index: 3; }
+    .cd-tekniker-hero .cd-hero-content h1 {
+      margin: 0 0 16px; }
+    .cd-tekniker-hero .cd-hero-content p {
+      font-size: 20px;
+      line-height: 32px;
+      max-width: 704px;
+      margin: 0 auto; }
+
+.cd-tekniker-hero-img-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+.cd-tekniker-hero-img {
+  -webkit-filter: blur(7px);
+          filter: blur(7px);
+  position: absolute;
+  top: 0;
+  left: -15px;
+  width: -webkit-calc(100% + 30px);
+  width: calc(100% + 30px);
+  height: 100%;
+  z-index: 1; }
+
+.cd-tekniker-thumbnail-container {
+  z-index: 3;
+  position: absolute;
+  bottom: -66px;
+  width: 100%;
+  left: 0; }
+  @media (max-width: 900px) {
+    .cd-tekniker-thumbnail-container {
+      bottom: -45px; } }
+
+.cd-tekniker-thumbnail {
+  height: 132px;
+  width: 132px;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  background-color: #F6F6F6; }
+  @media (max-width: 900px) {
+    .cd-tekniker-thumbnail {
+      height: 90px;
+      width: 90px;
+      margin: 0 auto; } }
+
+@media (max-width: 900px) {
+  .cd-tekniker-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; } }
+
+.cd-single-tekniker-section {
+  padding: 110px 0; }
+  @media (max-width: 900px) {
+    .cd-single-tekniker-section {
+      padding: 70px 0; } }
+  .cd-single-tekniker-section .cd-expert-left {
+    max-width: 636px;
+    margin-right: 16px; }
+    @media (max-width: 900px) {
+      .cd-single-tekniker-section .cd-expert-left {
+        margin-right: 0; } }
+  .cd-single-tekniker-section .cd-expert-right {
+    max-width: 374px;
+    padding-top: 40px; }
+    @media (max-width: 900px) {
+      .cd-single-tekniker-section .cd-expert-right {
+        display: block; } }
+    @media (max-width: 500px) {
+      .cd-single-tekniker-section .cd-expert-right {
+        max-width: 100%; } }
+
+.cd-tekniker-sidebar a {
+  background-color: #F93B2B;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  color: #FFFFFF;
+  font-size: 20px;
+  line-height: 24px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 62px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 27px 0 48px; }
+
+.cd-tekniker-sidebar-content {
+  padding: 40px 32px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #FAFAFA; }
+  .cd-tekniker-sidebar-content h4 {
+    color: #000000;
+    font-size: 22px;
+    line-height: 26px;
+    margin: 0; }
+  .cd-tekniker-sidebar-content p {
+    margin: 16px 0 0;
+    color: #6B6B6B;
+    font-size: 18px;
+    line-height: 22px; }
+    .cd-tekniker-sidebar-content p span {
+      color: black; }
+
+.cd-tekniker-table {
+  padding: 26px 32px 46px;
+  background-color: #FAFAFA;
+  margin-top: 38px; }
+  @media (max-width: 900px) {
+    .cd-tekniker-table {
+      padding: 16px 15px 46px; } }
+
+.cd-tekniker-th, .cd-tekniker-tr {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .cd-tekniker-th span, .cd-tekniker-tr span {
+    color: #6B6B6B;
+    font-size: 16px;
+    line-height: 31px;
+    padding-bottom: 8px;
+    font-weight: bold; }
+    @media (max-width: 900px) {
+      .cd-tekniker-th span, .cd-tekniker-tr span {
+        font-size: 12px; } }
+    @media (max-width: 500px) {
+      .cd-tekniker-th span, .cd-tekniker-tr span {
+        font-size: 10px; } }
+
+.cd-tekniker-td {
+  width: 100%;
+  max-width: 212px; }
+  @media (max-width: 900px) {
+    .cd-tekniker-td {
+      max-width: 130px; } }
+  @media (max-width: 500px) {
+    .cd-tekniker-td {
+      max-width: 90px; } }
+  .cd-tekniker-td:first-child {
+    max-width: 100%; }
+    .cd-tekniker-td:first-child p {
+      color: #000; }
+  .cd-tekniker-td p {
+    color: #6B6B6B;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+    margin: 0; }
+    @media (max-width: 900px) {
+      .cd-tekniker-td p {
+        font-size: 16px; } }
+    @media (max-width: 500px) {
+      .cd-tekniker-td p {
+        font-size: 14px; } }
+
+.cd-tekniker-tr {
+  padding: 15px 0 15px 25px;
+  -webkit-box-shadow: inset 0 1px 0 0 #E2E2E2;
+          box-shadow: inset 0 1px 0 0 #E2E2E2; }
+  @media (max-width: 500px) {
+    .cd-tekniker-tr {
+      padding: 10px 0 10px 10px; } }
+  .cd-tekniker-tr:nth-child(odd) {
+    background-color: #FFFFFF; }
+
+.cd-tekniker-tr-first {
+  border: 1px solid rgba(249, 22, 41, 0.2);
+  background-color: rgba(249, 22, 41, 0.1) !important;
+  -webkit-box-shadow: inset 0 1px 0 0 #E2E2E2 !important;
+          box-shadow: inset 0 1px 0 0 #E2E2E2 !important; }
