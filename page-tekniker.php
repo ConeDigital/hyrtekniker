@@ -50,13 +50,57 @@
     </section>
     <section class="cd-tekniker-list-section">
         <div class="cd-max-width">
+            <h4>28 stycken träffar</h4>
             <?php $loop = new WP_Query( array( 'post_type' => 'tekniker', 'posts_per_page' => -1, 'order' => 'DSC' )); ?>
             <?php if ( $loop->have_posts() ) : ?>
                 <div class="cd-tekniker-list">
                     <?php while ( $loop->have_posts() ) : $loop->the_post();?>
-                        <div>
-                            <h4><?php the_title() ; ?></h4>
-                            <?php the_field('tekniker-description') ; ?>
+                        <div class="cd-tekniker-card">
+                            <?php
+                            $categories = get_the_terms( $post->ID, 'category' );
+
+                            foreach( $categories as $category ) {
+                                if ($category->slug == 'expert-tekniker') {
+                                    $class = 'expert';
+                                }else if ($category->slug == 'kvalificerad-tekniker'){
+                                    $class = 'kvalificerad';
+                                }else if ($category->slug == 'junior-tekniker'){
+                                    $class = 'junior';
+                                }else{
+                                    $class = 'none';
+                                }
+                            } ?>
+                            <div class="cd-tekniker-thumbnail <?php echo $class ; ?>">
+                                <img class="junior-img" src="<?php echo esc_url(home_url('/wp-content/themes/hyrtekniker/assets/images/award-expert.png')) ; ?>" />
+                                <img class="kvalificerad-img" src="<?php echo esc_url(home_url('/wp-content/themes/hyrtekniker/assets/images/award-expert.png')) ; ?>" />
+                                <img class="expert-img" src="<?php echo esc_url(home_url('/wp-content/themes/hyrtekniker/assets/images/award-expert.png')) ; ?>" />
+                                <a class="cd-absolute-link" href="<?php the_permalink() ; ?>"></a>
+                            </div>
+                            <div class="cd-tekniker-card-content">
+                                <div>
+                                    <h4><a href="<?php the_permalink() ; ?>">
+                                        <?php
+                                        $categories = get_the_category();
+
+                                        if ( ! empty( $categories ) ) {
+                                            echo esc_html( $categories[0]->name );
+                                        }
+                                        ?>;
+                                        <?php the_title() ; ?></a>
+                                    </h4>
+                                    <?php the_field('tekniker-description') ; ?>
+                                </div>
+                                <div class="cd-tekniker-card-info">
+                                      <span>
+                                          <i class="material-icons">location_on</i>
+                                          Stockholm
+                                      </span>
+                                    <span>
+                                        <i class="material-icons">timer</i>
+                                        1 Månad
+                                    </span>
+                                </div>
+                            </div>
                         </div>
                     <?php endwhile; ?>
                 </div>
