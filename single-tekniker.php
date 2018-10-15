@@ -22,8 +22,24 @@
         <div class="cd-background-overlay"></div>
         <div class="cd-tekniker-thumbnail-container">
             <div class="cd-max-width">
-                <div class="cd-tekniker-thumbnail">
+                <?php
+                $categories = get_the_terms( $post->ID, 'category' );
 
+                foreach( $categories as $category ) {
+                    if ($category->slug == 'expert-tekniker') {
+                        $class = 'expert';
+                    }else if ($category->slug == 'kvalificerad-tekniker'){
+                        $class = 'kvalificerad';
+                    }else if ($category->slug == 'junior-tekniker'){
+                        $class = 'junior';
+                    }else{
+                        $class = 'none';
+                    }
+                } ?>
+                <div class="cd-tekniker-thumbnail <?php echo $class ; ?>">
+                    <img class="junior-img" src="<?php echo esc_url(home_url('/wp-content/themes/hyrtekniker/assets/images/award-expert.png')) ; ?>" />
+                    <img class="kvalificerad-img" src="<?php echo esc_url(home_url('/wp-content/themes/hyrtekniker/assets/images/award-expert.png')) ; ?>" />
+                    <img class="expert-img" src="<?php echo esc_url(home_url('/wp-content/themes/hyrtekniker/assets/images/award-expert.png')) ; ?>" />
                 </div>
             </div>
         </div>
@@ -59,7 +75,7 @@
                         </p>
                         <p>Expertområden: <span>El & Belysning</span></p>
                     </div>
-                    <a href="#" >Intresseförfrågan</a>
+                    <a href="#intresseforfragan" >Intresseförfrågan</a>
                 </div>
                 <div class="cd-tekniker-sidebar">
                     <div class="cd-tekniker-sidebar-content">
@@ -178,7 +194,11 @@
             </div>
         </div>
     </section>
-
+    <section id="intresseforfragan" class="cd-contact-form-section cd-background-img" style="background-image: url('<?php the_field('contact-form-img', 'option') ?>')">
+        <div class="cd-contact-form">
+            <?php echo do_shortcode(get_field('contact-form-shortcode','option')) ; ?>
+        </div>
+    </section>
 
 
 <?php endwhile; ?>
