@@ -1869,6 +1869,12 @@ footer {
 .cd-tekniker-filter-section {
   background-color: #F6F6F6;
   padding: 48px 0; }
+  .cd-tekniker-filter-section h5 {
+    color: #4F4F4F;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 0 0 20px;
+    text-transform: none; }
 
 .cd-tekniker-filter {
   display: -webkit-box;
@@ -1883,6 +1889,205 @@ footer {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+  @media (max-width: 900px) {
+    .cd-tekniker-filter {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
+
+.cd-tekniker-filter-item {
+  width: 100%;
+  margin-right: 35px; }
+  @media (max-width: 900px) {
+    .cd-tekniker-filter-item {
+      margin: 0 0 35px; } }
+  .cd-tekniker-filter-item:last-child {
+    margin: 0; }
+  .cd-tekniker-filter-item select {
+    height: 40px;
+    width: 100%;
+    border: 1px solid #D9D9D9;
+    background-color: #FFFFFF; }
+  .cd-tekniker-filter-item input[type=checkbox] {
+    position: absolute;
+    visibility: hidden; }
+  .cd-tekniker-filter-item label {
+    display: block;
+    position: relative;
+    padding: 0 0 0 20px;
+    z-index: 9;
+    cursor: pointer;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    color: #4F4F4F;
+    margin-right: 40px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content; }
+  .cd-tekniker-filter-item .check {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    border: 1px solid #DCDCDC;
+    -webkit-border-radius: 2px;
+            border-radius: 2px;
+    background-color: #FFFFFF;
+    top: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    left: 0;
+    z-index: 5;
+    -webkit-transition: border .2s linear;
+    transition: border .2s linear; }
+    .cd-tekniker-filter-item .check i {
+      color: white;
+      font-size: 14px; }
+  .cd-tekniker-filter-item .check::before {
+    display: block !important;
+    position: absolute !important;
+    content: '' !important;
+    -webkit-border-radius: 100% !important;
+            border-radius: 100% !important;
+    height: 15px !important;
+    width: 15px !important;
+    top: 5px !important;
+    left: 5px !important;
+    margin: auto !important;
+    -webkit-transition: background 0.2s linear;
+    transition: background 0.2s linear; }
+  .cd-tekniker-filter-item input[type=checkbox]:checked ~ .check {
+    border: 1px solid #EA5C45;
+    background-color: #EA5C45; }
+
+.cd-competence-filter {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content; }
+
+.cd-availability {
+  max-width: 324px; }
+  @media (max-width: 500px) {
+    .cd-availability {
+      max-width: 100%; } }
+
+.cd-location {
+  max-width: 244px; }
+  @media (max-width: 500px) {
+    .cd-location {
+      max-width: 100%; } }
+
+.cd-competence-item {
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+  .cd-competence-item:last-child label {
+    margin-right: 0; }
+
+.cd-competence {
+  height: 40px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.cd-date-heading {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .cd-date-heading p {
+    color: #9B9B9B;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: right;
+    font-weight: 500;
+    margin: 0; }
+  .cd-date-heading span {
+    color: black;
+    font-weight: bold;
+    font-size: 16px; }
+
+.cd-slidecontainer {
+  height: 40px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* Special styling for WebKit/Blink */
+  /* All the same stuff for Firefox */
+  /* All the same stuff for IE */ }
+  .cd-slidecontainer input {
+    width: 100%; }
+  .cd-slidecontainer input[type=range] {
+    -webkit-appearance: none;
+    /* Hides the slider so that custom slider can be made */
+    width: 100%;
+    /* Specific width is required for Firefox. */
+    background-color: #D8D8D8;
+    height: 3px; }
+  .cd-slidecontainer input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none; }
+  .cd-slidecontainer input[type=range]:focus {
+    outline: none;
+    /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */ }
+  .cd-slidecontainer input[type=range]::-ms-track {
+    width: 100%;
+    cursor: pointer;
+    /* Hides the slider so custom styles can be added */
+    background: transparent;
+    border-color: transparent;
+    color: transparent; }
+  .cd-slidecontainer input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 28px;
+    width: 28px;
+    background-color: #F91629;
+    -webkit-box-shadow: 0 2px 4px 0 rgba(249, 22, 41, 0.2);
+            box-shadow: 0 2px 4px 0 rgba(249, 22, 41, 0.2);
+    -webkit-border-radius: 100%;
+            border-radius: 100%; }
+  .cd-slidecontainer input[type=range]::-moz-range-thumb {
+    height: 28px;
+    width: 28px;
+    background-color: #F91629;
+    box-shadow: 0 2px 4px 0 rgba(249, 22, 41, 0.2);
+    border-radius: 100%; }
+  .cd-slidecontainer input[type=range]::-ms-thumb {
+    height: 28px;
+    width: 28px;
+    background-color: #F91629;
+    box-shadow: 0 2px 4px 0 rgba(249, 22, 41, 0.2);
+    border-radius: 100%; }
 
 .cd-tekniker-list-section {
   padding: 60px 0 140px; }
@@ -1910,13 +2115,16 @@ footer {
           box-shadow: inset 0 1px 0 0 #EEEEEE; }
   @media (max-width: 600px) {
     .cd-tekniker-card {
-      padding: 15px; } }
+      padding: 15px 0; } }
   .cd-tekniker-card p {
     max-width: 570px;
     color: #96989A;
     font-size: 16px;
     line-height: 25px;
     margin: 0 0 10px; }
+    @media (max-width: 500px) {
+      .cd-tekniker-card p {
+        font-size: 14px; } }
 
 .cd-tekniker-card-content {
   margin-left: 38px;
@@ -1946,6 +2154,17 @@ footer {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
+  @media (max-width: 500px) {
+    .cd-tekniker-card-info {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: start;
+      -webkit-align-items: flex-start;
+          -ms-flex-align: start;
+              align-items: flex-start; } }
   .cd-tekniker-card-info span {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1955,6 +2174,10 @@ footer {
     font-size: 16px;
     line-height: 19px;
     margin-right: 24px; }
+    @media (max-width: 500px) {
+      .cd-tekniker-card-info span {
+        margin: 0 0 8px;
+        font-size: 14px; } }
     .cd-tekniker-card-info span i {
       font-size: 16px;
       margin-right: 8px; }

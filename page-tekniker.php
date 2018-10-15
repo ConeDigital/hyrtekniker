@@ -16,22 +16,31 @@
     </section>
     <section class="cd-tekniker-filter-section">
         <div class="cd-max-width cd-tekniker-filter">
-            <div class="cd-tekniker-filter-item">
+            <div class="cd-tekniker-filter-item cd-competence-filter">
                 <h5>Kompetens</h5>
                 <input type="hidden" id="cd-competence" />
                 <div class="cd-competence">
-                    <label>
-                        <input type="checkbox" data-id="cd-competence" value="junior-tekniker" checked />
-                        Junior
-                    </label>
-                    <label>
-                        <input type="checkbox" data-id="cd-competence" value="kvalificerad-tekniker" checked />
-                        Kvalificerad
-                    </label>
-                    <label>
-                        <input type="checkbox" data-id="cd-competence" value="expert-tekniker" checked />
-                        Expert
-                    </label>
+                    <div class="cd-competence-item">
+                        <input type="checkbox" id="cd-junior" data-id="cd-competence" value="junior-tekniker" checked />
+                        <label for="cd-junior">Junior</label>
+                        <div class="check">
+                            <i class="material-icons">check</i>
+                        </div>
+                    </div>
+                    <div class="cd-competence-item">
+                        <input type="checkbox" id="cd-kvalificerad-tekniker" data-id="cd-competence" value="kvalificerad-tekniker" checked />
+                        <label for="cd-kvalificerad-tekniker">Kvalificerad</label>
+                        <div class="check">
+                            <i class="material-icons">check</i>
+                        </div>
+                    </div>
+                    <div class="cd-competence-item">
+                        <input type="checkbox" id="cd-expert" data-id="cd-competence" value="expert-tekniker" checked />
+                        <label for="cd-expert">Expert</label>
+                        <div class="check">
+                            <i class="material-icons">check</i>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="cd-tekniker-filter-item cd-location">
@@ -44,8 +53,10 @@
                 </select>
             </div>
             <div class="cd-tekniker-filter-item cd-availability">
-                <h5>Tillgänglighet:</h5>
-                <p class="range-text">Inom <span id="range-value">0</span> månader</p>
+                <div class="cd-date-heading">
+                    <h5>Tillgänglighet:</h5>
+                    <p class="range-text">Inom <span id="range-value">0</span> månader</p>
+                </div>
                 <input type="hidden" id="cd-availability" value="0" />
                 <div class="cd-slidecontainer">
                     <input data-id="cd-availability" type="range" min="0" max="12" value="0" class="slider" id="myRange">
@@ -101,11 +112,11 @@
                                 <div class="cd-tekniker-card-info">
                                       <span>
                                           <i class="material-icons">location_on</i>
-                                          Stockholm
+                                          <?php the_field('tekniker-city') ; ?>
                                       </span>
                                     <span>
                                         <i class="material-icons">timer</i>
-                                        1 Månad
+                                        Tillgänlig: <?php the_field('tekniker-date') ; ?>
                                     </span>
                                 </div>
                             </div>
