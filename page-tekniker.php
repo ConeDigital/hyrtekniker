@@ -18,32 +18,37 @@
         <div class="cd-max-width cd-tekniker-filter">
             <div class="cd-tekniker-filter-item">
                 <h5>Kompetens</h5>
-                <div>
+                <input type="hidden" id="cd-competence" />
+                <div class="cd-competence">
                     <label>
-                        <input type="checkbox" />
+                        <input type="checkbox" data-id="cd-competence" value="junior-tekniker" checked />
                         Junior
                     </label>
                     <label>
-                        <input type="checkbox" />
+                        <input type="checkbox" data-id="cd-competence" value="kvalificerad-tekniker" checked />
                         Kvalificerad
                     </label>
                     <label>
-                        <input type="checkbox" />
+                        <input type="checkbox" data-id="cd-competence" value="expert-tekniker" checked />
                         Expert
                     </label>
                 </div>
             </div>
-            <div class="cd-tekniker-filter-item">
+            <div class="cd-tekniker-filter-item cd-location">
                 <h5>Område:</h5>
-                <select>
-                    <option>Stockholm</option>
-                    <option>Malmö</option>
+                <input type="hidden" id="cd-location" />
+                <select data-id="cd-location">
+                    <option value="">Alla</option>
+                    <option value="Stockholm">Stockholm</option>
+                    <option value="Malmö">Malmö</option>
                 </select>
             </div>
-            <div class="cd-tekniker-filter-item">
+            <div class="cd-tekniker-filter-item cd-availability">
                 <h5>Tillgänglighet:</h5>
+                <p class="range-text">Inom <span id="range-value">0</span> månader</p>
+                <input type="hidden" id="cd-availability" value="0" />
                 <div class="cd-slidecontainer">
-                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                    <input data-id="cd-availability" type="range" min="0" max="12" value="0" class="slider" id="myRange">
                 </div>
             </div>
         </div>
@@ -55,7 +60,10 @@
             <?php if ( $loop->have_posts() ) : ?>
                 <div class="cd-tekniker-list">
                     <?php while ( $loop->have_posts() ) : $loop->the_post();?>
-                        <div class="cd-tekniker-card">
+                        <div class="cd-tekniker-card cd-single-tech"
+                             data-competence="<?php echo get_the_category()[0]->slug; ?>"
+                             data-location="<?php the_field('tekniker-city'); ?>"
+                             data-availability="<?php the_field('tekniker-date'); ?>">
                             <?php
                             $categories = get_the_terms( $post->ID, 'category' );
 
