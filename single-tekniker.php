@@ -64,7 +64,7 @@
                     <div class="cd-tekniker-sidebar-content">
                         <h4>Information</h4>
                         <p>Arbetsområde: <span><?php the_field('tekniker-city') ; ?></span></p>
-                        <p>Tillgänglig: <span>Inom 1 månad</span></p>
+                        <p>Tillgänglig: <span><?php the_field('tekniker-date') ; ?></span></p>
                         <p>Kompetensnivå: <span><?php
                                 $categories = get_the_category();
 
@@ -196,7 +196,7 @@
     </section>
     <section id="intresseforfragan" class="cd-contact-form-section cd-background-img" style="background-image: url('<?php the_field('contact-form-img', 'option') ?>')">
         <div class="cd-contact-form">
-            <?php echo do_shortcode(get_field('contact-form-shortcode','option')) ; ?>
+            <?php echo do_shortcode(get_field('tekniker-form-shortcode','option')) ; ?>
         </div>
     </section>
 

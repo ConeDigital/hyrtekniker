@@ -129,7 +129,24 @@
         </div>
     </section>
 
-
+    <section class="cd-page-bottom-section">
+        <div class="cd-page-bottom-grid cd-page-bottom-left cd-background-img" style="background-image: url('<?php echo esc_url(home_url('/wp-content/themes/hyrtekniker/assets/images/mashroom.jpeg')) ; ?>')">
+            <div class="cd-background-overlay"></div>
+            <div class="cd-page-bottom-content">
+                <h4>För Företag</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur lorem.</p>
+                <a href="<?php echo esc_url(home_url('/for-foretag')); ?>" class="cd-outline-button"><span>Läs mer</span></a>
+            </div>
+        </div>
+        <div class="cd-page-bottom-grid cd-page-bottom-left cd-background-img" style="background-image: url('<?php echo esc_url(home_url('/wp-content/themes/hyrtekniker/assets/images/worker.jpeg')) ; ?>')">
+            <div class="cd-background-overlay"></div>
+            <div class="cd-page-bottom-content">
+                <h4>För Tekniker</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur lorem.</p>
+                <a href="<?php echo esc_url(home_url('/for-tekniker')); ?>" class="cd-outline-button"><span>Läs mer</span></a>
+            </div>
+        </div>
+    </section>
 
 <?php endwhile; ?>
 
