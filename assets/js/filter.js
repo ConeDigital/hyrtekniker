@@ -1,4 +1,7 @@
 jQuery(document).ready( function($) {
+	//Change initial count on page load
+	$('.cd-tekniker-count').text( $('.cd-no-results-form').data('initial_count')+' träffar' );
+	
 	$(document).on('change', '.cd-competence input, .cd-location select, .cd-availability input', function(){
 		//Get type that was changed
 		var input_id = $(this).data('id');
@@ -21,6 +24,13 @@ jQuery(document).ready( function($) {
 		}
 		//Filter techs
 		filterTech();
+
+		//Show no result form if no results
+		if ( $('.cd-tekniker-show').length == 0 ){
+			$('.cd-no-results-form').show();
+		}else{
+			$('.cd-no-results-form').hide();
+		}
 	});
 });
 
@@ -65,9 +75,27 @@ function filterTech() {
 			visible = false;
 		}
 
-		visible ? jQuery(this).show() : jQuery(this).hide();  
+		if ( visible ) {
+			jQuery(this).removeClass('cd-tekniker-hidden');
+			jQuery(this).addClass('cd-tekniker-show')
+		}
+		else{
+			jQuery(this).addClass('cd-tekniker-hidden');
+			jQuery(this).removeClass('cd-tekniker-show');
+		}
 	});
+	//Update tekniker count
+	var count_text = ' träffar';
+	if ( jQuery('.cd-tekniker-show').length == 0 ) {
+		count_text = 'Inga'+ count_text;
+	}else if ( jQuery('.cd-tekniker-show').length == 1 ) {
+		count_text = '1 träff';
+	}else {
+		count_text = jQuery('.cd-tekniker-show').length + count_text;
+	}
+	jQuery('.cd-tekniker-count').text( count_text );
 
+	//Show resluts
 	jQuery('.cd-tekniker-list-section').css('opacity', 1);
 
 }
