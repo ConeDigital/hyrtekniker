@@ -195,5 +195,4 @@ $today = strtotime(date('d.m.Y'));
         </div>
     </section>
 
-
 <?php get_footer() ; ?>
