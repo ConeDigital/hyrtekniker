@@ -53,18 +53,67 @@
   @include breakpoint(laptop) {
     bottom: -45px;
   }
+  @include breakpoint(mobile) {
+    bottom: -35px;
+  }
 }
 
 .cd-tekniker-thumbnail{
-    height: 132px;
-    width: 132px;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
-    background-color: #F6F6F6;
+  height: 132px;
+  width: 132px;
+  min-height: 132px;
+  min-width: 132px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+  background-color: #F6F6F6;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   @include breakpoint(laptop) {
     height: 90px;
     width: 90px;
-    margin:  0 auto;
+    min-height: 90px;
+    min-width: 90px;
+  }
+
+  @include breakpoint(mobile) {
+    height: 70px;
+    width: 70px;
+    min-height: 70px;
+    min-width: 70px;
+  }
+
+
+  img{
+    display: none;
+    width: auto;
+    height: auto;
+    max-height: 60%;
+  }
+}
+
+.expert{
+  background-color: #ffe8ea;
+
+  .expert-img{
+    display: block;
+  }
+}
+
+.kvalificerad{
+  background-color: #fff4da;
+
+  .kvalificerad-img{
+    display: block;
+  }
+}
+
+.junior{
+  background-color: #eef4f8;
+
+  .junior-img{
+    display: block;
   }
 }
 
