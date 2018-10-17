@@ -167,8 +167,9 @@ $today = strtotime(date('d.m.Y'));
                         </div>
                     <?php endwhile; ?>
                     <div class="cd-no-results-form" data-initial_count="<?php echo $count; ?>" style="display: none;">
-                        Fyll i det här är du vacker:
-                        <input type="text" name="" placeholder="Vad du vill skriva" />
+                        Fyll i det här formuläret:
+                        <input type="text" name="" placeholder="Text" />
+                        <input type="button" name="send" value="skicka" />
                     </div>
                 </div>
             <?php endif; ?>
