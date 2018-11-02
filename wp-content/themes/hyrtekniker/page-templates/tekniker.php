@@ -171,9 +171,8 @@ $today = strtotime(date('d.m.Y'));
                         </div>
                     <?php endwhile; ?>
                     <div class="cd-no-results-form" data-initial_count="<?php echo $count; ?>" style="display: none;">
-                        Fyll i det här formuläret:
-                        <input type="text" name="" placeholder="Text" />
-                        <input type="button" name="send" value="skicka" />
+                        <p>Vi har inga publicerade tekniker som matchar din sökning men kontakta oss så hör vi av oss så fort vi har en tillgänglig tekniker.</p>
+                        <?php get_template_part( 'template-parts/form', get_post_format() ); ?>
                     </div>
                 </div>
             <?php endif; ?>
@@ -186,7 +185,7 @@ $today = strtotime(date('d.m.Y'));
             <div class="cd-background-overlay"></div>
             <div class="cd-page-bottom-content">
                 <h4>För Företag</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur lorem.</p>
+                <p>Vi rekryterar och bemannar fastighetsorganisationer med kvalificerad kompetens och kapacitet.</p>
                 <a href="<?php echo esc_url(home_url('/for-foretag')); ?>" class="cd-outline-button"><span>Läs mer</span></a>
             </div>
         </div>
@@ -194,7 +193,7 @@ $today = strtotime(date('d.m.Y'));
             <div class="cd-background-overlay"></div>
             <div class="cd-page-bottom-content">
                 <h4>För Tekniker</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur lorem.</p>
+                <p>Vill du öka din lön väsentligt, eller bara bestämma mer över din tid?</p>
                 <a href="<?php echo esc_url(home_url('/for-tekniker')); ?>" class="cd-outline-button"><span>Läs mer</span></a>
             </div>
         </div>

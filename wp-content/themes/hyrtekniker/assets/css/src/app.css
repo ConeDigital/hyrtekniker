@@ -518,8 +518,7 @@ img {
 
 .cd-background-img {
   background-position: center;
-  -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
   background-color: black; }
@@ -529,12 +528,10 @@ img {
   width: 100%;
   height: 100%;
   background: -webkit-radial-gradient(circle, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.55) 100%);
-  background: -o-radial-gradient(circle, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.55) 100%);
   background: radial-gradient(circle, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.55) 100%);
   left: 0;
   top: 0;
   -webkit-transition: 0.2s ease-in-out;
-  -o-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out; }
 
 .cd-button {
@@ -549,7 +546,6 @@ img {
   padding: 11px 23px;
   display: block;
   -webkit-transition: 0.2s ease-in-out;
-  -o-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out; }
   .cd-button:hover {
     -webkit-box-shadow: 0 6px 20px rgba(234, 92, 69, 0.5);
@@ -562,7 +558,6 @@ img {
   cursor: pointer;
   text-align: center;
   -webkit-transition: 0.2s ease-in-out;
-  -o-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out; }
   .sharer:hover {
     text-decoration: underline; }
@@ -704,7 +699,6 @@ header {
     .cd-header ul a {
       margin-left: 40px;
       -webkit-transition: 0.2s ease-in-out;
-      -o-transition: 0.2s ease-in-out;
       transition: 0.2s ease-in-out;
       color: #FFFFFF;
       font-size: 16px;
@@ -1060,10 +1054,8 @@ footer {
     line-height: 29px;
     margin: 10px 0 8px;
     -webkit-transition: 0.3s ease-in-out;
-    -o-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
     -webkit-transition-delay: 0.05s;
-         -o-transition-delay: 0.05s;
             transition-delay: 0.05s; }
     @media (max-width: 600px) {
       .cd-home-link-content h4 {
@@ -1075,18 +1067,18 @@ footer {
     text-transform: uppercase;
     margin: 0;
     -webkit-transition: 0.3s ease-in-out;
-    -o-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out; }
     @media (max-width: 600px) {
       .cd-home-link-content p {
         font-size: 11px; } }
   .cd-home-link-content i {
     -webkit-transition: 0.3s ease-in-out;
-    -o-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
     -webkit-transition-delay: 0.1s;
-         -o-transition-delay: 0.1s;
             transition-delay: 0.1s; }
+
+.cd-no-results-form .cd-contact-form {
+  max-width: 100%; }
 
 .cd-page-section {
   padding: 44px 0; }
@@ -1207,7 +1199,6 @@ footer {
   padding: 20px 40px;
   display: inline-block;
   -webkit-transition: 0.2s ease-in-out;
-  -o-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out; }
   @media (max-width: 600px) {
     .cd-hero-button {
@@ -1279,7 +1270,6 @@ footer {
     line-height: 22px;
     margin-bottom: 15px;
     -webkit-transition: 0.2s ease-in-out;
-    -o-transition: 0.2s ease-in-out;
     transition: 0.2s ease-in-out; }
     .cd-expert-sidebar-content a:hover {
       color: #000; }
@@ -1298,7 +1288,6 @@ footer {
   display: inline-block;
   margin-top: 28px;
   -webkit-transition: 0.2s ease-in-out;
-  -o-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
   text-align: center; }
   .cd-expert-sidebar-link:hover {
@@ -1538,7 +1527,6 @@ footer {
   margin-bottom: 15px;
   outline: none;
   -webkit-transition: 0.2s ease-in-out;
-  -o-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out; }
   .cd-form-step-three input:focus {
     border-bottom: 1px solid #EA5C45; }
@@ -1555,7 +1543,6 @@ footer {
   padding: 11px 23px;
   display: block;
   -webkit-transition: 0.2s ease-in-out;
-  -o-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
   margin-top: 45px; }
   .cd-form-step-three input[type=submit]:hover {
@@ -1704,7 +1691,6 @@ footer {
       display: inline-block;
       width: auto;
       -webkit-transition: 0.2s ease-in-out;
-      -o-transition: 0.2s ease-in-out;
       transition: 0.2s ease-in-out; }
       @media (max-width: 600px) {
         .cd-contact-form .wpcf7 .wpcf7-submit {
@@ -1838,7 +1824,6 @@ footer {
     content: '';
     position: absolute;
     -webkit-transition: all .3s;
-    -o-transition: all .3s;
     transition: all .3s;
     width: 100%;
     height: 0;
@@ -1976,7 +1961,6 @@ footer {
   border-bottom: 1px solid white;
   background: white;
   -webkit-transition: 0.2s ease-in-out;
-  -o-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out; }
 
 .cd-qual-content, .cd-expert-content {
@@ -2044,7 +2028,6 @@ footer {
     z-index: 9;
     cursor: pointer;
     -webkit-transition: all 0.2s linear;
-    -o-transition: all 0.2s linear;
     transition: all 0.2s linear;
     color: #4F4F4F;
     margin-right: 40px;
@@ -2077,7 +2060,6 @@ footer {
     left: 0;
     z-index: 5;
     -webkit-transition: border .2s linear;
-    -o-transition: border .2s linear;
     transition: border .2s linear; }
     .cd-tekniker-filter-item .check i {
       color: white;
@@ -2094,7 +2076,6 @@ footer {
     left: 5px !important;
     margin: auto !important;
     -webkit-transition: background 0.2s linear;
-    -o-transition: background 0.2s linear;
     transition: background 0.2s linear; }
   .cd-tekniker-filter-item input[type=checkbox]:checked ~ .check {
     border: 1px solid #EA5C45;
