@@ -57,7 +57,7 @@
                     <?php the_title() ; ?>
                 </h2>
                 <?php the_content() ; ?>
-                <p><strong>Starttid: inom en månad</strong></p>
+                <p><strong>Starttid: <?php the_field('tekniker-date') ; ?></strong></p>
             </div>
             <div class="cd-expert-right">
                 <div class="cd-tekniker-sidebar">
@@ -73,7 +73,7 @@
                                 }
                                 ?></span>
                         </p>
-                        <p>Expertområden: <span>El & Belysning</span></p>
+                        <p>Expertområden: <span><?php the_field('tekniker-expertise') ; ?></span></p>
                     </div>
                     <a href="#intresseforfragan" >Intresseförfrågan</a>
                 </div>
