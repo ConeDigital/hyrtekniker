@@ -149,17 +149,6 @@
                 </div>
                 <div class="cd-tekniker-tr">
                     <div class="cd-tekniker-td">
-                        <p>Rondering</p>
-                    </div>
-                    <div class="cd-tekniker-td">
-                        <p><?php the_field('rondering-year') ; ?></p>
-                    </div>
-                    <div class="cd-tekniker-td">
-                        <p><?php the_field('rondering-skill') ; ?></p>
-                    </div>
-                </div>
-                <div class="cd-tekniker-tr">
-                    <div class="cd-tekniker-td">
                         <p>Datorer</p>
                     </div>
                     <div class="cd-tekniker-td">
@@ -189,6 +178,105 @@
                     </div>
                     <div class="cd-tekniker-td">
                         <p><?php the_field('energi-skill') ; ?></p>
+                    </div>
+                </div>
+                <div class="cd-tekniker-tr">
+                    <div class="cd-tekniker-td">
+                        <p>Felanmälan</p>
+                    </div>
+                    <div class="cd-tekniker-td">
+                        <p><?php the_field('wrong-year') ; ?></p>
+                    </div>
+                    <div class="cd-tekniker-td">
+                        <p><?php the_field('wrong-skill') ; ?></p>
+                    </div>
+                </div>
+                <div class="cd-tekniker-tr">
+                    <div class="cd-tekniker-td">
+                        <p>Inneklimat</p>
+                    </div>
+                    <div class="cd-tekniker-td">
+                        <p><?php the_field('inside-year') ; ?></p>
+                    </div>
+                    <div class="cd-tekniker-td">
+                        <p><?php the_field('inside-skill') ; ?></p>
+                    </div>
+                </div>
+                <div class="cd-tekniker-tr">
+                    <div class="cd-tekniker-td">
+                        <p>Kundservice och bemötande</p>
+                    </div>
+                    <div class="cd-tekniker-td">
+                        <p><?php the_field('customer-year') ; ?></p>
+                    </div>
+                    <div class="cd-tekniker-td">
+                        <p><?php the_field('customer-skill') ; ?></p>
+                    </div>
+                </div>
+                <div class="cd-tekniker-tr">
+                    <div class="cd-tekniker-td">
+                        <p>Larm, Passage & Lås</p>
+                    </div>
+                    <div class="cd-tekniker-td">
+                        <p><?php the_field('alarm-year') ; ?></p>
+                    </div>
+                    <div class="cd-tekniker-td">
+                        <p><?php the_field('alarm-skill') ; ?></p>
+                    </div>
+                </div>
+                <div class="cd-tekniker-tr">
+                    <div class="cd-tekniker-td">
+                        <p>Rondering</p>
+                    </div>
+                    <div class="cd-tekniker-td">
+                        <p><?php the_field('rondering-year') ; ?></p>
+                    </div>
+                    <div class="cd-tekniker-td">
+                        <p><?php the_field('rondering-skill') ; ?></p>
+                    </div>
+                </div>
+                <div class="cd-tekniker-tr">
+                    <div class="cd-tekniker-td">
+                        <p>Styr & Regler</p>
+                    </div>
+                    <div class="cd-tekniker-td">
+                        <p><?php the_field('rules-year') ; ?></p>
+                    </div>
+                    <div class="cd-tekniker-td">
+                        <p><?php the_field('rules-skill') ; ?></p>
+                    </div>
+                </div>
+                <div class="cd-tekniker-tr">
+                    <div class="cd-tekniker-td">
+                        <p>Ventilation</p>
+                    </div>
+                    <div class="cd-tekniker-td">
+                        <p><?php the_field('vent-year') ; ?></p>
+                    </div>
+                    <div class="cd-tekniker-td">
+                        <p><?php the_field('vent-skill') ; ?></p>
+                    </div>
+                </div>
+                <div class="cd-tekniker-tr">
+                    <div class="cd-tekniker-td">
+                        <p>Värme och vatten</p>
+                    </div>
+                    <div class="cd-tekniker-td">
+                        <p><?php the_field('warm-year') ; ?></p>
+                    </div>
+                    <div class="cd-tekniker-td">
+                        <p><?php the_field('warm-skill') ; ?></p>
+                    </div>
+                </div>
+                <div class="cd-tekniker-tr">
+                    <div class="cd-tekniker-td">
+                        <p>Utbildning</p>
+                    </div>
+                    <div class="cd-tekniker-td">
+                        <p><?php the_field('edu-year') ; ?></p>
+                    </div>
+                    <div class="cd-tekniker-td">
+                        <p><?php the_field('edu-skill') ; ?></p>
                     </div>
                 </div>
             </div>
