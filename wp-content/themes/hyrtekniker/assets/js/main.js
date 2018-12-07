@@ -82,6 +82,12 @@ jQuery(document).ready( function($) {
         }, 300);
     });
 
+
+    //PRINT PROFILE -----------------------------
+    function printProfile(){
+        window.print();
+    }
+
     //OPEN SLIDER IF CHECKBOX IS CHECKED
     var ckbox = $('.cd-form-checks input[type=checkbox]');
 

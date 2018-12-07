@@ -37,9 +37,15 @@
                     }
                 } ?>
                 <div class="cd-tekniker-thumbnail <?php echo $class ; ?>">
-                    <img class="junior-img" src="<?php echo esc_url(home_url('/wp-content/themes/hyrtekniker/assets/images/award-expert.png')) ; ?>" />
-                    <img class="kvalificerad-img" src="<?php echo esc_url(home_url('/wp-content/themes/hyrtekniker/assets/images/award-expert.png')) ; ?>" />
-                    <img class="expert-img" src="<?php echo esc_url(home_url('/wp-content/themes/hyrtekniker/assets/images/award-expert.png')) ; ?>" />
+                    <?php if ( $categories[0]->slug  === 'junior-tekniker') : ?>
+                        <img class="junior-img" src="<?php echo esc_url(home_url('/wp-content/themes/hyrtekniker/assets/images/award-junior.png')) ; ?>" />
+                    <?php endif; ?>
+                    <?php if ( $categories[0]->slug  === 'kvalificerad-tekniker') : ?>
+                        <img class="kvalificerad-img" src="<?php echo esc_url(home_url('/wp-content/themes/hyrtekniker/assets/images/award-kvalificerad.png')) ; ?>" />
+                    <?php endif; ?>
+                    <?php if ( $categories[0]->slug  === 'expert-tekniker') : ?>
+                        <img class="expert-img" src="<?php echo esc_url(home_url('/wp-content/themes/hyrtekniker/assets/images/award-expert.png')) ; ?>" />
+                    <?php endif; ?>
                 </div>
             </div>
         </div>
@@ -76,6 +82,13 @@
                         <p>Expertområden: <span><?php the_field('tekniker-expertise') ; ?></span></p>
                     </div>
                     <a href="#intresseforfragan" >Intresseförfrågan</a>
+                    <button class="cd-print-button" onclick="printProfile()" ><i class="material-icons">print</i>Skriv ut profil</button>
+
+                    <script>
+                        function printProfile() {
+                            window.print();
+                        }
+                    </script>
                 </div>
                 <div class="cd-tekniker-sidebar">
                     <div class="cd-tekniker-sidebar-content">
