@@ -2469,7 +2469,7 @@ footer {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 27px 0 48px; }
+  margin: 27px 0; }
 
 .cd-tekniker-sidebar-content {
   padding: 40px 32px;
