@@ -314,4 +314,16 @@
   .cd-tekniker-table{
     padding: 0;
   }
+  .cd-single-tekniker-section, body{
+    page-break-inside: avoid;
+  }
+  .cd-expert-left{
+    page-break-after: always;
+  }
+  .cd-expert-wrapper{
+    display: block;
+  }
+  .cd-tekniker-table-section{
+    page-break-before: always;
+  }
 }
