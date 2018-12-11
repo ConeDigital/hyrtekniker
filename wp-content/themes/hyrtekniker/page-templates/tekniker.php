@@ -5,7 +5,7 @@ Template Name: Tekniker Page
 get_header() ;
 
 $args_city = array(
-  'numberposts' => -1,
+  'posts_per_page' => -1,
   'post_type' => 'tekniker',
   'meta_query' => array(
     'available_clause' => array(
@@ -18,7 +18,7 @@ $args_city = array(
   )
 );
 $args = array(
-  'numberposts' => -1,
+  'posts_per_page' => -1,
   'post_type' => 'tekniker',
   'meta_query' => array(
     'available_clause' => array(
