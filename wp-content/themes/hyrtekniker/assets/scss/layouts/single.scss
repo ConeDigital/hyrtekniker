@@ -296,6 +296,18 @@
   }
 }
 
+.cd-print-header{
+  display: none;
+  border-bottom: 2px solid $primary-color;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 60px 5px 0;
+
+  img{
+    max-width: 180px;
+  }
+}
+
 @media print {
   header, .cd-tekniker-hero, .cd-tekniker-sidebar a, .cd-print-button, .cd-contact-form-section, footer{
     display: none;
@@ -314,8 +326,9 @@
   .cd-tekniker-table{
     padding: 0;
   }
-  .cd-single-tekniker-section, body{
+  .cd-single-tekniker-section{
     page-break-inside: avoid;
+    padding-top: 40px;
   }
   .cd-expert-left{
     page-break-after: always;
@@ -325,5 +338,8 @@
   }
   .cd-tekniker-table-section{
     page-break-before: always;
+  }
+  .cd-print-header{
+      display: flex;
   }
 }

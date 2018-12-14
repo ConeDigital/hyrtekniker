@@ -2579,6 +2579,21 @@ footer {
     margin-right: 10px;
     font-size: 16px; }
 
+.cd-print-header {
+  display: none;
+  border-bottom: 2px solid #EA5C45;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 60px 5px 0; }
+  .cd-print-header img {
+    max-width: 180px; }
+
 @media print {
   header, .cd-tekniker-hero, .cd-tekniker-sidebar a, .cd-print-button, .cd-contact-form-section, footer {
     display: none; }
@@ -2592,11 +2607,17 @@ footer {
     margin-top: 50px; }
   .cd-tekniker-table {
     padding: 0; }
-  .cd-single-tekniker-section, body {
-    page-break-inside: avoid; }
+  .cd-single-tekniker-section {
+    page-break-inside: avoid;
+    padding-top: 40px; }
   .cd-expert-left {
     page-break-after: always; }
   .cd-expert-wrapper {
     display: block; }
   .cd-tekniker-table-section {
-    page-break-before: always; } }
+    page-break-before: always; }
+  .cd-print-header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; } }

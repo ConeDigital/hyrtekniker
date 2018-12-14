@@ -1,6 +1,8 @@
 <?php get_header() ; ?>
 <?php while ( have_posts() ) : the_post(); ?>
-
+    <div class="cd-print-header">
+        <img src="<?php the_field('secondary-logo', 'option') ; ?>">
+    </div>
     <section class="cd-hero cd-tekniker-hero">
         <div class="cd-tekniker-hero-img-wrapper">
             <div class="cd-tekniker-hero-img cd-background-img" style="background-image: url('<?php the_post_thumbnail_url() ; ?>')"></div>
