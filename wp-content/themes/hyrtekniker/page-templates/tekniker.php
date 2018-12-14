@@ -33,6 +33,7 @@ $args = array(
 $count = 0;
 $today = strtotime(date('d.m.Y'));
 ?>
+
     <section class="cd-hero cd-tekniker-hero">
         <div class="cd-tekniker-hero-img-wrapper">
             <div class="cd-tekniker-hero-img cd-background-img" style="background-image: url('<?php the_post_thumbnail_url() ; ?>')"></div>
