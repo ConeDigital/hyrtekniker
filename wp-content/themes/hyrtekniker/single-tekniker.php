@@ -65,14 +65,14 @@
                     <?php the_title() ; ?>
                 </h2>
                 <?php the_content() ; ?>
-                <p><strong>Starttid: <?php the_field('tekniker-date') ; ?></strong></p>
+                <p><strong>Starttid: <?php echo date('d/m/Y', strtotime( get_field('tekniker-date') ) ); ?></strong></p>
             </div>
             <div class="cd-expert-right">
                 <div class="cd-tekniker-sidebar">
                     <div class="cd-tekniker-sidebar-content">
                         <h4>Information</h4>
                         <p>Arbetsområde: <span><?php the_field('tekniker-city') ; ?></span></p>
-                        <p>Tillgänglig: <span><?php the_field('tekniker-date') ; ?></span></p>
+                        <p>Tillgänglig: <span><?php echo date('d/m/Y', strtotime( get_field('tekniker-date') ) ); ?></span></p>
                         <p>Kompetensnivå: <span><?php
                                 $categories = get_the_category();
 
